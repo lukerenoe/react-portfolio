@@ -11,3 +11,130 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 4rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  align-items: center;
+  background-color: black;
+  color: aliceblue;
+  height: 6rem;
+}
+
+h1 {
+  margin:  0 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  padding: .2rem;
+  list-style: none;
+  margin:  0 2rem;
+  padding-bottom: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: .5rem;
+  font-size: 1.5rem;
+}
+
+nav a:hover {
+  color:darkslategray;
+  transition: .5s ease;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.me {
+  border-radius: 30rem;
+  width: 10%;
+  height: 14rem;
+  width: 12rem;
+}
+
+section {
+  display: flex;
+  border: .2rem darkslategray;
+  position: relative;
+  width: 30rem;
+  border-radius: 1rem;
+  height: 30rem;
+  margin: 1rem 1rem;
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section:hover {
+  border: 5px solid black;
+opacity: .5;
+transition: .5s ease;
+background-color: #008CBA;
+}
+
+.card1 {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/580a75e103596ef7c3a8ed74/1630542655024-N7OUQHJ4LWALX1NB69YP/Becoming+Invisible.jpg?format=750w); 
+  
+}
+.card2 {
+  background-image: url(https://wallpaperaccess.com/full/4766059.jpg); 
+}
+.card3 {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/580a75e103596ef7c3a8ed74/1616215216693-ZIXP863TESBR3J1LBCR3/blm.jpg?format=2500w);
+}
+
+.cardheader {
+  display: flex;
+  border: .1rem solid darkslategray;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 500rem;
+  align-items: center;
+  padding: 5%;
+  margin-top: 25rem;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
+aside {
+  background-color: black;
+  height: 100rem;
+  width: 15rem;
+  color: darkslategray;
+  display: block;
+  float: left;
+  padding: 1rem 0;
+  font-variant: small-caps;
+}
+
+.about {
+  display: flex;
+  padding-top: 1rem;
+  padding-left: .5rem;
+}
+
+@media screen and (max-width: 992px) {
+  article,
+  section {
+  flex-direction: column;
+  } 
+}
+
+Footer {
+  display: flex;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  margin-top: 30rem;
+}
